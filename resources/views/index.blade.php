@@ -1,6 +1,7 @@
-@extends('template')
 
+@extends('layouts.app')
 @section('content')
+<div class="container">
     <h1>Mi lista de superheroes</h1>
 
     <a class="btn btn-primary mt-2" href="{{ route('superheroes.create') }}">Añadir superheroe</a>
@@ -41,4 +42,5 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection
